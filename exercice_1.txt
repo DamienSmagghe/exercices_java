@@ -1,0 +1,36 @@
+1°)
+    - False 10 (Si la promière opération d'une condition AND est fausse le reste de la condition n'est pas éxécutée)
+    - 28 (Mettre un zéro rend l'INT en base 8)
+    - Erreur (car il manque une accolade à la fin de la fonction (renverrait "OK" si l'accolade fermait la fonction))
+    - Erreur NullPointerException (car Boolean est au autoboxing de boolean)
+    - 12 (la fonction mystery effectue en réalité une multiplication du paramètre x par y)
+
+2°)"iabd" => Selon la suite des exceptions et catch
+
+3°) Output :
+un premier texte
+un deuxieme texte
+un deuxieme texte texte a concatener en string
+construction sbuffer texte a concatener en sbuffer
+construction sbuffer 2
+simple construction
+
+4°) Ce programme renvoie une erreur "NullPointerException".
+Correction pour fonctionner :
+public class Test {
+
+    static int[] f(int [] array, int nb) {
+        array = new int[nb];
+        for(int value: array)
+            System.out.println(++value + " ");
+        return array;
+    }
+    public static void main(String[] args) {
+        int size = 3;
+        int [] array = new int[3];
+        f(array, size);
+        for(int value: array)
+            System.out.println(value + " ");
+    }
+
+}
